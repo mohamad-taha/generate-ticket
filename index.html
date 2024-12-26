@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Conference ticket generator" />
+    <meta name="keywords" content="conference, ticket, generator" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap");
+    </style>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <title>Mohamad Taha Kasir | Conference ticket generator</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./assets/images/logo-mark.svg" alt="Coding Conf logo" />
+        <p>Coding Conf</p>
+      </div>
+    </header>
+    <div class="pattern">
+      <img src="./assets/images/pattern-lines.svg" alt="Pattern lines" />
+      <img src="./assets/images/pattern-circle.svg" alt="Pattern circle" />
+      <img
+        src="./assets/images/pattern-squiggly-line-bottom.svg"
+        alt="Pattern squiggly line bottom"
+      />
+      <img
+        src="./assets/images/pattern-squiggly-line-top.svg"
+        alt="Pattern squiggly line top"
+      />
+      <img src="./assets/images/pattern-circle.svg" alt="Pattern circle" />
+    </div>
+    <div class="container">
+      <div class="form">
+        <div>
+          <h1 class="title">Your Journey to Coding Conf 2025 Starts Here!</h1>
+          <p>Secure your spot at next year's biggest coding conference.</p>
+        </div>
+
+        <form>
+          <div class="inputFileContainer">
+            <p class="label">Upload Avatar</p>
+            <label for="personalPhoto">
+              <img src="./assets/images/icon-upload.svg" alt="Upload icon" />
+              <div>Drag and drop or click to upload</div>
+              <input
+                type="file"
+                id="personalPhoto"
+                accept=".jpg, .png"
+                name="photo"
+              />
+            </label>
+            <small class="inputFileAlert">
+              <img src="./assets/images/icon-info.svg" alt="Info icon" />
+              Upload Avatar Upload your photo (JPG or PNG, max size: 500KB).
+            </small>
+          </div>
+          <div>
+            <label for="name">
+              <p class="label">Full Name</p>
+              <input
+                autocomplete="off"
+                type="text"
+                id="name"
+                name="Username"
+                class="formInput"
+                required
+              />
+            </label>
+          </div>
+          <div>
+            <label for="email">
+              <p class="label">Email Address</p>
+              <input
+                autocomplete="off"
+                type="email"
+                id="email"
+                placeholder="example@email.com"
+                name="email"
+                class="formInput"
+                required
+              />
+            </label>
+            <small class="inputEmailAlert">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="none"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  stroke="darkred"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2 8a6 6 0 1 0 12 0A6 6 0 0 0 2 8Z"
+                />
+                <path fill="#D1D0D5" d="M8.004 10.462V7.596ZM8 5.57v-.042Z" />
+                <path
+                  stroke="darkred"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.004 10.462V7.596M8 5.569v-.042"
+                />
+              </svg>
+              Please enter a vaild email address.
+            </small>
+          </div>
+          <div>
+            <label for="githubName">
+              <p class="label">GitHub Username</p>
+              <input
+                autocomplete="off"
+                type="text"
+                id="githubName"
+                placeholder="@yourusername"
+                name="githubUserName"
+                class="formInput"
+              />
+            </label>
+          </div>
+          <button type="submit">Generate My Ticket</button>
+        </form>
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/mohamad-taha" target="_blank"
+          >Mohamad Taha Kasir</a
+        >.
+      </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>generated ticket</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap");
+    </style>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./assets/images/logo-mark.svg" alt="Coding Conf logo" />
+        <p>Coding Conf</p>
+      </div>
+    </header>
+    <div class="pattern">
+      <img src="./assets/images/pattern-lines.svg" alt="Pattern lines" />
+      <img src="./assets/images/pattern-circle.svg" alt="Pattern circle" />
+      <img
+        src="./assets/images/pattern-squiggly-line-bottom.svg"
+        alt="Pattern squiggly line bottom"
+      />
+      <img
+        src="./assets/images/pattern-squiggly-line-top.svg"
+        alt="Pattern squiggly line top"
+      />
+      <img src="./assets/images/pattern-circle.svg" alt="Pattern circle" />
+    </div>
+    <div class="container">
+      <div id="generated-ticket">
+        <div class="ticket-header">
+          <h1>
+            Congrats, <span class="full-name"></span>! <br />
+            Your ticket is ready.
+          </h1>
+          <p>
+            We've emailed your ticket to <span id="email-address"></span> and
+            will send updates in the run up to the event.
+          </p>
+        </div>
+        <div class="ticket">
+          <div class="logo">
+            <img src="./assets/images/logo-mark.svg" alt="Coding Conf logo" />
+            <p>Coding Conf</p>
+          </div>
+          <p class="date-ticket">Coding Conf Jan 31, 2025 / Austin, TX</p>
+          <div class="ticket-footer">
+            <img class="ticket-img" alt="personal-photo" />
+            <div>
+              <p class="full-name"></p>
+              <p>
+                <img src="./assets/images/icon-github.svg" alt="icon-github" />
+                <span class="email-address"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
