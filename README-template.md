@@ -10,8 +10,8 @@ This is a solution to the [Conference ticket generator challenge on Frontend Men
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)   
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/responsive-page-using-pure-js-BHKC8ODl09)
+- Live Site URL: [Add live site URL here](https://mohamad-taha.github.io/generate-ticket/)
 
 ### Built with
 
