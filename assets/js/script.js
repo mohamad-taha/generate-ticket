@@ -78,27 +78,22 @@ if (form) {
       };
       reader.readAsDataURL(file);
     }
-    const queryString = `name=${encodeURIComponent(
-      nameInput.value
-    )}&email=${encodeURIComponent(emailInput.value)}&githubName=${
-      githubName.value
-    }`;
-    window.location.href = `ticket.html?${queryString}`;
+    localStorage.setItem("name", nameInput.value);
+    localStorage.setItem("githubName", githubName.value);
+    localStorage.setItem("email", emailInput.value);
+    window.location.href = "ticket.html";
   });
 }
 /* ---------------------ticket----------------------- */
 
-const getQueryParam = (param) => {
-  const urlParams = new URLSearchParams(window.location.search);
-  return urlParams.get(param);
-};
-
 document.querySelectorAll(".full-name").forEach((input) => {
-  input.innerHTML = getQueryParam("name");
+  input.innerHTML = localStorage.getItem("name");
 });
 
 document.querySelectorAll(".email-address").forEach((input) => {
-  input.innerHTML = getQueryParam("email");
+  input.innerHTML = localStorage.getItem("email");
 });
-if (document.querySelector(".ticket-img"))
+
+if (document.querySelector(".ticket-img")) {
   document.querySelector(".ticket-img").src = localStorage.getItem("img");
+}
